@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    color: #1d1d1f;
+}
+.links-wrapper {
+    padding: 15px 0;
+}
+.links-wrapper ul {
+    list-style: none;
+}
+.links-wrapper ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.btn-blue {
+    background-color: #0071e3;
+    color: #fff !important;
+    padding: 8px 18px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+.btn-blue:hover {
+    background-color: #005bb5;
+}
+.btn-white {
+    background-color: transparent;
+    border: 1px solid #0071e3;
+    color: #0071e3 !important;
+    padding: 8px 18px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+.btn-white:hover {
+    background-color: #0071e3;
+    color: #fff !important;
+}
+.links-wrapper a {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px; /* makes it pill-shaped */
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+.primary-btn {
+    background-color: #0071e3;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #0077ed;
+}
+.secondary-btn {
+    border: 1px solid #0071e3;
+    color: #0071e3;
+}
+
+.secondary-btn:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+.header-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    color: white;
+    font-weight: 200;
+    font-size: 0.75em;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.header-wrapper ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.inner-wrapper {
+    width: 1024px;
+    padding: 0 22px;
+    margin: 0 auto;
+}
+.header-wrapper .header-link-wrapper ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.header-wrapper .header-link-wrapper ul li a:hover {
+    opacity: 1;
+}
+.header-wrapper .header-link-wrapper ul li {
+    display: inline-block;
+    padding: 14px 0 12px;
+}
+.logo-link img, .cart-link img, .search-link img {
+    width: 16px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+
+    .inner-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .header-wrapper ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-wrapper .header-link-wrapper ul li {
+        padding: 10px 5px;
+    }
+}
+
+.main-highlight-wrapper {
+    background: #000;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.wwdc-logo img {
+    width: 380px;
+}
+
+.wwdc-title {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 200;
+}
+
+.wwdc-subtitle {
+    color: #86868b;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.main-highlight-wrapper .links-wrapper {
+    margin-top: 15px;
+}
+
+.main-image-wrapper {
+    padding-top: 30px;
+}
+@media (max-width: 768px) {
+
+    .wwdc-logo img {
+        width: 250px;
+    }
+
+    .wwdc-title {
+        font-size: 22px;
+        padding: 0 20px;
+    }
+
+    .wwdc-subtitle {
+        font-size: 18px;
+    }
+
+    .links-wrapper a {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+  /*BANNER CONFIGURATIONS*/
+  .hero-1 {
+    margin-top: 48px;
+    height: 700px;
+    background-image: url("apple-devices-banner.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-align: center;
+    padding-top: 55px;
+}
+.hero-2 {
+    height: 700px;
+    background-image: url("fathers-day-banner.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 55px;
+}
+.hero-3 {
+    height: 700px;
+    background-image: url("mac-and-ipad-banner.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 55px;
+}
+.product-title {
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: -0.5px;
+}
+.brief-description {
+    font-size: 24px;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+
+    .hero-1,
+    .hero-2,
+    .hero-3 {
+        height: 500px;
+        background-size: cover;
+        padding-top: 40px;
+    }
+
+    .product-title {
+        font-size: 36px;
+    }
+
+    .brief-description {
+        font-size: 18px;
+    }
+}
+/* grid box */
+.grid-box {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px 12px 0 12px;
+}
+.left-side-wrapper, .right-side-wrapper {
+    height: 540px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 49.4%;
+    padding-top: 50px;
+}
+.title-wrapper {
+    font-weight: 600;
+    font-size: 40px;
+}
+.title-wrapper span {
+    font-weight: 300;
+}
+.title-wrapper-blue {
+    font-weight: 600;
+    font-size: 40px;
+}
+.title-wrapper-blue span {
+    color: #2f9cd4;
+}
+.description-wrapper {
+    font-size: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 6px 10px;
+}
+
+/* Row Background Allocations */
+.box-row-1 .left-side-wrapper { 
+    background-image: url("macbook-promo-banner.jpg"); 
+    background-color: #fbfbfd; 
+}
+.box-row-1 .right-side-wrapper { 
+    background-image: url("ipads-banner.jpg"); 
+    background-color: #fbfbfd; 
+}
+.box-row-2 .left-side-wrapper {
+     background-image: url("macbook-pro.jpg"); 
+     color: #fff; background-color: #000; 
+    }
+.box-row-2 .right-side-wrapper { 
+    background-image: url("watch-series-11.jpg"); 
+    background-color: #fbfbfd; 
+}
+.box-row-3 .left-side-wrapper { 
+    background-image: url("airpods-and-card-banner.jpg"); 
+    background-color: #fbfbfd; 
+}
+.box-row-3 .right-side-wrapper { 
+    background-image: url("iphone-trade-banner.jpg"); 
+    background-color: #fbfbfd; 
+}
+
+@media (max-width: 768px) {
+
+    .grid-box {
+        flex-direction: column;
+    }
+
+    .left-side-wrapper,
+    .right-side-wrapper {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
+/* Entertainment */
+
+.entertainment-wrapper {
+    background: #f5f5f7;
+    padding: 80px 0 50px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.entertainment-title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin-bottom: 40px;
+}
+
+.slider-row {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-large {
+    margin-bottom: 20px;
+}
+
+/* BIG SLIDER */
+
+.slider-track {
+    display: flex;
+    gap: 15px;
+    width: max-content;
+    animation: slideLarge 30s linear infinite;
+}
+
+.slider-track img {
+    width: 720px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    flex-shrink: 0;
+}
+
+/* SMALL SLIDER */
+
+.slider-track-small {
+    display: flex;
+    gap: 15px;
+    width: max-content;
+    animation: slideSmall 20s linear infinite;
+}
+
+.slider-track-small img {
+    width: 250px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+/* ANIMATIONS */
+
+@keyframes slideLarge {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideSmall {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* DOTS */
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #b0b0b0;
+    border-radius: 50%;
+}
+
+.dot.active {
+    width: 32px;
+    border-radius: 999px;
+    background: #1d1d1f;
+}
+
+@media (max-width: 768px) {
+
+    .entertainment-title {
+        font-size: 36px;
+    }
+
+    .slider-track img {
+        width: 350px;
+        height: 210px;
+    }
+
+    .slider-track-small img {
+        width: 150px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .entertainment-title {
+        font-size: 28px;
+    }
+
+    .slider-track img {
+        width: 280px;
+        height: 160px;
+    }
+
+    .slider-track-small img {
+        width: 120px;
+        height: 70px;
+    }
+}
+
+/* FOOTER */
+.footer-wrapper {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-size: 0.65em;
+}
+.footer-text-wrapper {
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    color: #86868b;
+    padding: 17px 0 20px;
+}
+.upper-text-container a {
+    text-decoration: none;
+    color: #515154;
+}
+.upper-text-container a:hover {
+    text-decoration: underline;
+}
+.footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    gap: 10px;
+}
+.footer-links-wrapper ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+.footer-wrapper ul li {
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+.footer-links-wrapper a {
+    color: #515154;
+    text-decoration: none;
+}
+.footer-links-wrapper a:hover {
+    text-decoration: underline;
+}
+.footer-links-wrapper h3 {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+.my-apple-wrapper {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.my-apple-wrapper a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.my-apple-wrapper a:hover {
+    text-decoration: underline;
+}
+.copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px;
+}
+.footer-links-terms ul {
+    padding: 0;
+}
+.footer-links-terms ul li {
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+.footer-links-terms ul li:last-child {
+    border-right: 0;
+}
+.footer-links-terms ul li a {
+    text-decoration: none;
+    color: #515154;
+}
+.footer-links-terms ul li a:hover {
+    text-decoration: underline;
+}
+.footer-country {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.flag-wrapper {
+    display: inline-block;
+}
+.footer-country-name {
+    display: inline-block;
+}
